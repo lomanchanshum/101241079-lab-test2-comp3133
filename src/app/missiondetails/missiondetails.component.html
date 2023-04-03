@@ -1,0 +1,17 @@
+<mat-card *ngIf='mission' class="md">
+  <mat-card-actions style="text-align: left;">
+    <button (click)="goBack()" mat-button>Back</button>
+  </mat-card-actions>
+    <h2 style="margin: 0;"><strong>Mission:</strong> {{mission.mission_name}}</h2>
+    <h3 style="padding: 0;"><strong>Launch Year:</strong> {{mission.launch_year}}</h3>
+    <img mat-card-image style="width: 200px !important;" src="{{mission.links.mission_patch_small}}" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <hr/>
+      <h4 class="text-left"><strong>Rocket:</strong> {{mission.rocket.rocket_name}}</h4>
+      <h4 class="text-left"><strong>Launch Site:</strong> {{mission.launch_site.site_name_long}}</h4>
+      <p class="text-left">
+        {{mission.details}}
+      </p>
+    </mat-card-content>
+
+  </mat-card>

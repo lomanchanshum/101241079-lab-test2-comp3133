@@ -1,0 +1,10 @@
+.md{
+    width: 500px; 
+    text-align: center !important; 
+    margin: auto;
+    margin-top: 50px;
+    background-color: lightgray;
+}
+.text-left{
+    text-align: left;
+}

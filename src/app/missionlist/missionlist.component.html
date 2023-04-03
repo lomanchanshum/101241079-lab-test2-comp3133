@@ -1,0 +1,14 @@
+    <mat-selection-list style="width: 500px; margin: auto;"  dense [multiple]="false">
+        <div mat-subheader>Missions</div>
+        <div>
+        <mat-list-option *ngFor='let mission of missions' style="border-bottom: grey solid 2px;" routerLink="/details/{{mission.flight_number}}">
+          <mat-icon mat-list-icon> <img mat-card-image style="width: 38px !important;" src="{{mission.links.mission_patch_small}}"></mat-icon>
+          <div mat-line>{{mission.mission_name}}</div>
+          <div mat-line>{{mission.launch_year}}</div>
+        </mat-list-option >
+        
+      </div>
+
+      </mat-selection-list>
+
+
